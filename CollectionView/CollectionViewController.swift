@@ -53,8 +53,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
         override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if (segue.identifier == "toView") {
             let subVC: SelectedViewController = (segue.destination as? SelectedViewController)!
-            // SubViewController のselectedImgに選択された画像を設定する
-            subVC.title = selectedTitle
+            subVC.titles = selectedTitle
         }
     }
     
